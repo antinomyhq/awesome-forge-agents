@@ -1,7 +1,7 @@
 # 🤖 ForgeCode.dev Agent Personas
 
 <div align="center">
-  <img src="../gateway/frontend/public/logo-light.svg" alt="ForgeCode.dev Logo" width="200" height="auto">
+  <img src="./assets/images/logo-light.svg" alt="ForgeCode.dev Logo" width="200" height="auto">
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![YAML](https://img.shields.io/badge/Config-YAML-blue.svg)](https://yaml.org/)
@@ -28,7 +28,7 @@ agent-configs/
 ## 🤖 Available Agents
 
 ### 💖 Lovable - Frontend Development Specialist
-<img src="../gateway/frontend/public/logo-small-light.png" alt="Lovable Agent" width="32" height="32" align="left">
+<img src="./assets/images/logo-small-light.png" alt="Lovable Agent" width="32" height="32" align="left">
 
 **Specialization**: React & Modern Frontend Technologies  
 **Personality**: Friendly and encouraging  
@@ -39,7 +39,7 @@ agent-configs/
 ---
 
 ### 🧙‍♂️ Sage - Backend Architecture Expert
-<img src="../gateway/frontend/public/logo-small-dark.png" alt="Sage Agent" width="32" height="32" align="left">
+<img src="./assets/images/logo-small-dark.png" alt="Sage Agent" width="32" height="32" align="left">
 
 **Specialization**: System Architecture & Backend Development  
 **Personality**: Thoughtful and analytical  
@@ -183,7 +183,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <img src="../gateway/frontend/public/favicon-light.svg" alt="ForgeCode.dev" width="24" height="24">
+  <img src="./assets/images/favicon-light.svg" alt="ForgeCode.dev" width="24" height="24">
   
   **Built with ❤️ for the ForgeCode.dev ecosystem**
 </div>
