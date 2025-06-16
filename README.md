@@ -123,15 +123,6 @@ agent_config:
     styling: "tailwind"
 ```
 
-## Agent Comparison
-
-| Feature | Lovable | Sage |
-|---------|---------|------|
-| **Primary Focus** | Frontend Development | Backend Architecture |
-| **Communication Style** | Friendly & Encouraging | Thoughtful & Analytical |
-| **Expertise Level** | Expert | Senior Architect |
-| **Main Technologies** | React, TypeScript, Tailwind | Python, Go, PostgreSQL |
-| **Problem Solving** | Iterative & Collaborative | Systematic & Thorough |
 
 ## Configuration Guidelines
 
