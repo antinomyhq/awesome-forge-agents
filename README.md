@@ -179,5 +179,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <strong>Built for the ForgeCode.dev ecosystem</strong>
+  <img src="./assets/images/favicon-light.svg" alt="ForgeCode.dev" width="24" height="24">
+  
+  **Built with ❤️ for the ForgeCode.dev ecosystem**
 </div>
