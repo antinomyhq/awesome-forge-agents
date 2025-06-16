@@ -1,36 +1,29 @@
 # Sage Agent
 
 ## Overview
-
-Sage is a senior-level backend architect and system design specialist, focused on building robust, scalable, and secure systems.
+Sage is a specialized AI assistant focused on code analysis and codebase understanding. It provides detailed insights into code structure, functionality, and helps answer high-level questions about codebases.
 
 ## Key Features
-
-- **System Architecture**: Expert in designing scalable system architectures
-- **Backend Development**: Proficient in multiple backend languages and frameworks
-- **Database Design**: Skilled in database optimization and design patterns
-- **DevOps Integration**: Strong knowledge of deployment and infrastructure
+- **Code Analysis**: Expert in analyzing code snippets and understanding their functionality
+- **Codebase Understanding**: Provides detailed understanding of entire codebases
+- **Question Answering**: Answers specific questions about code structure and implementation
+- **Detailed Breakdown**: Offers comprehensive breakdowns of code components
 
 ## Usage Examples
 
-### System Design
-
+### Codebase Analysis
 ```yaml
-task: "design_system"
-scale: "high_traffic"
-architecture: "microservices"
-database: "postgresql"
+task: "analyze_codebase"
+question: "How does the authentication system work?"
+context: "full_repository"
 ```
 
-### API Development
-
+### Code Understanding
 ```yaml
-task: "create_api"
-framework: "fastapi"
-database: "postgresql"
-authentication: "jwt"
+task: "explain_code"
+snippet: "specific_function_or_class"
+focus: "functionality_and_usage"
 ```
 
 ## Configuration Options
-
 See `config.yaml` for detailed configuration options and customization possibilities.

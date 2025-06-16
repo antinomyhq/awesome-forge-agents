@@ -44,11 +44,11 @@ agent-configs/
 
 ---
 
-### Sage - Backend Architecture Expert
+### Sage - Codebase Analysis Expert
 
-**Specialization**: System Architecture & Backend Development  
-**Personality**: Thoughtful and analytical  
-**Focus**: Scalability, Security, Performance
+**Specialization**: Code Analysis & Understanding  
+**Personality**: Analytical and thorough  
+**Focus**: Codebase comprehension, code breakdown, detailed analysis
 
 [Learn more about Sage →](./sage/README.md)
 
