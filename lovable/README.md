@@ -1,9 +1,11 @@
 # Lovable Agent
 
 ## Overview
+
 Lovable is a frontend development specialist designed to help with React-based web applications and modern frontend technologies.
 
 ## Key Features
+
 - **React Expertise**: Deep knowledge of React patterns and best practices
 - **Modern Tooling**: Proficient with Vite, TypeScript, and modern build tools
 - **UI/UX Focus**: Strong emphasis on user experience and responsive design
@@ -12,6 +14,7 @@ Lovable is a frontend development specialist designed to help with React-based w
 ## Usage Examples
 
 ### Component Development
+
 ```yaml
 task: "create_component"
 component_type: "functional"
@@ -20,6 +23,7 @@ typescript: true
 ```
 
 ### Project Setup
+
 ```yaml
 task: "setup_project"
 framework: "react"
@@ -28,4 +32,5 @@ styling_framework: "tailwind"
 ```
 
 ## Configuration Options
+
 See `config.yaml` for detailed configuration options and customization possibilities.

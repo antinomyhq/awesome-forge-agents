@@ -6,7 +6,7 @@ description: "AI-powered web development agent specializing in React and modern 
 agent:
   type: "frontend_developer"
   specialization: "react_development"
-  
+
 # Capabilities
 capabilities:
   - "React component development"
@@ -21,7 +21,7 @@ personality:
   communication_style: "friendly_and_encouraging"
   expertise_level: "expert"
   problem_solving_approach: "iterative_and_collaborative"
-  
+
 # Technical Preferences
 preferences:
   frameworks:

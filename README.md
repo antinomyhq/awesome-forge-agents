@@ -91,12 +91,14 @@ integrations:
 ### Adding a New Agent
 
 1. **Create Agent Directory**
+
    ```bash
    mkdir new-agent-name
    cd new-agent-name
    ```
 
 2. **Create Configuration File**
+
    ```bash
    touch config.yaml
    ```
@@ -122,7 +124,6 @@ agent_config:
     component_name: "UserProfile"
     styling: "tailwind"
 ```
-
 
 ## Configuration Guidelines
 
