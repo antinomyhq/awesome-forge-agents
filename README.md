@@ -17,6 +17,9 @@ This repository contains the agent persona configurations for the **ForgeCode.de
 ```
 agent-configs/
 ├── README.md                 # This file
+├── LICENSE                   # MIT License
+├── assets/                   # Images and media files
+│   └── images/              # Logo and icon files
 ├── lovable/                  # Frontend Development Agent
 │   ├── config.yaml          # Agent configuration
 │   └── README.md            # Agent documentation
