@@ -40,7 +40,7 @@ agent-configs/
 **Personality**: Friendly and encouraging  
 **Focus**: UI/UX, Performance, Modern tooling
 
-[Learn more about Lovable →](./lovable/README.md)
+[Learn more about Lovable →](./agents/lovable/README.md)
 
 ---
 
@@ -50,7 +50,7 @@ agent-configs/
 **Personality**: Analytical and thorough  
 **Focus**: Codebase comprehension, code breakdown, detailed analysis
 
-[Learn more about Sage →](./sage/README.md)
+[Learn more about Sage →](./agents/sage/README.md)
 
 ---
 
@@ -174,8 +174,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Related Projects
 
 - [ForgeCode.dev Platform](https://forgecode.dev) - Main platform
-- [ForgeCode.dev Documentation](https://docs.forgecode.dev) - Platform documentation
-- [ForgeCode.dev API](https://api.forgecode.dev) - Platform API
+- [ForgeCode.dev Documentation](https://forgecode.dev/docs) - Platform documentation
+- [ForgeCode.dev App](https://app.forgecode.dev) - Platform application
 
 ---
 

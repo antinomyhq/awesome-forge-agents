@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/antinomyhq/forge/refs/heads/main/forge.schema.json
 templates: 
- - repomix-output.md
+ - repomix-output.xml
 agents:
   - id: sage
     title: Answers questions about the codebase
@@ -13,7 +13,7 @@ agents:
       First, let's examine the code snippet you'll be analyzing:
 
       <code_snippet>
-      {{> repomix-output.md}}
+      {{> repomix-output.xml}}
       </code_snippet>
 
 
