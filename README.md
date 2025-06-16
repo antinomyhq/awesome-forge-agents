@@ -14,22 +14,23 @@
 
 ## Overview
 
-This repository contains the agent persona configurations for the **ForgeCode.dev** project. Each agent is defined using YAML configuration files that specify their capabilities, personality traits, technical preferences, and workflow settings.
+This repository contains the agent persona configurations for the **ForgeCode.dev** project. Each agent is defined using YAML configuration files that follow the Forge schema format, specifying their system prompts, capabilities, and interaction patterns for AI-powered development assistance.
 
 ## Repository Structure
 
 ```
-agent-configs/
+.
 ├── README.md                 # This file
 ├── LICENSE                   # MIT License
 ├── assets/                   # Images and media files
 │   └── images/              # Logo and icon files
-├── lovable/                  # Frontend Development Agent
-│   ├── config.yaml          # Agent configuration
-│   └── README.md            # Agent documentation
-└── sage/                    # Backend Architecture Agent
-    ├── config.yaml          # Agent configuration
-    └── README.md            # Agent documentation
+├── agents/                   # Agent configurations
+│   ├── lovable/             # Frontend Development Agent
+│   │   ├── config.yaml      # Agent configuration
+│   │   └── README.md        # Agent documentation
+│   └── sage/                # Codebase Analysis Agent
+│       ├── config.yaml      # Agent configuration
+│       └── README.md        # Agent documentation
 ```
 
 ## Available Agents
@@ -60,8 +61,8 @@ Each agent configuration follows the Forge schema format:
 
 ```yaml
 # yaml-language-server: $schema=https://raw.githubusercontent.com/antinomyhq/forge/refs/heads/main/forge.schema.json
-templates:
-  - name-of-local-templates
+templates: 
+ - repomix-output.xml
 agents:
   - id: "agent_id"
     title: "Agent Title"
@@ -71,17 +72,17 @@ agents:
     system_prompt: |-
       Detailed system prompt that defines the agent's behavior,
       capabilities, and interaction patterns. This includes:
-
+      
       - Core responsibilities and expertise areas
       - Technical capabilities and preferences
       - Communication style and personality
       - Task approach and methodology
       - Best practices and guidelines
-
+      
       The system prompt uses Handlebars templates for dynamic content:
       {{> forge-partial-system-info.hbs }}
       {{> forge-partial-tool-information.hbs }}
-
+      
       {{#if custom_rules}}
       <custom_rules>
       {{custom_rules}}
@@ -97,8 +98,8 @@ agents:
 1. **Create Agent Directory**
 
    ```bash
-   mkdir new-agent-name
-   cd new-agent-name
+   mkdir agents/new-agent-name
+   cd agents/new-agent-name
    ```
 
 2. **Create Configuration File**
@@ -117,16 +118,23 @@ agents:
 
 ### Using Agent Configurations
 
-These configurations are designed to be consumed by the ForgeCode.dev platform to instantiate AI agents with specific personas and capabilities.
+These configurations are designed to be consumed by the ForgeCode.dev platform to instantiate AI agents with specific personas and capabilities. The Forge platform uses these YAML files to:
+
+- Load agent-specific system prompts and behavior patterns
+- Apply the appropriate templates and context information
+- Configure the agent's interaction style and technical focus
+- Enable specialized development assistance for different domains
 
 ```yaml
 # Example usage in ForgeCode.dev
 agent_config:
-  source: "agent-configs/lovable/config.yaml"
+  source: "agent-configs/agents/lovable/config.yaml"
+  agent_id: "lovable"
   task: "create_react_component"
   parameters:
     component_name: "UserProfile"
-    styling: "tailwind"
+    styling: "shadcn"
+    typescript: true
 ```
 
 ## Configuration Guidelines
@@ -134,9 +142,10 @@ agent_config:
 ### Best Practices
 
 - **Consistency**: Use consistent naming conventions across all agent configs
-- **Versioning**: Always specify version numbers for tracking changes
+- **Schema Compliance**: Follow the Forge schema format for compatibility
 - **Documentation**: Include comprehensive descriptions and examples
 - **Validation**: Ensure YAML syntax is valid before committing
+- **Template Usage**: Leverage Handlebars templates for dynamic content
 
 ### Required Fields
 
@@ -167,10 +176,9 @@ agent_config:
 ### Modifying Existing Agents
 
 1. Update the configuration file
-2. Increment the version number
-3. Update documentation if needed
-4. Test the configuration
-5. Submit a pull request
+2. Update documentation if needed
+3. Test the configuration with the Forge platform
+4. Submit a pull request
 
 ## License
 
