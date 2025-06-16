@@ -56,34 +56,38 @@ agent-configs/
 
 ## Configuration Schema
 
-Each agent configuration follows a standardized YAML schema:
+Each agent configuration follows the Forge schema format:
 
 ```yaml
-name: "Agent Name"
-version: "1.0.0"
-description: "Agent description"
+# yaml-language-server: $schema=https://raw.githubusercontent.com/antinomyhq/forge/refs/heads/main/forge.schema.json
+templates:
+  - name-of-local-templates
+agents:
+  - id: "agent_id"
+    title: "Agent Title"
+    description: |-
+      Multi-line description of the agent's purpose
+      and capabilities.
+    system_prompt: |-
+      Detailed system prompt that defines the agent's behavior,
+      capabilities, and interaction patterns. This includes:
 
-agent:
-  type: "agent_type"
-  specialization: "specialization_area"
+      - Core responsibilities and expertise areas
+      - Technical capabilities and preferences
+      - Communication style and personality
+      - Task approach and methodology
+      - Best practices and guidelines
 
-capabilities:
-  - "capability_1"
-  - "capability_2"
+      The system prompt uses Handlebars templates for dynamic content:
+      {{> forge-partial-system-info.hbs }}
+      {{> forge-partial-tool-information.hbs }}
 
-personality:
-  communication_style: "style"
-  expertise_level: "level"
-  problem_solving_approach: "approach"
-
-preferences:
-  # Technology preferences
-
-workflow:
-  # Workflow settings
-
-integrations:
-  # Integration configurations
+      {{#if custom_rules}}
+      <custom_rules>
+      {{custom_rules}}
+      </custom_rules>
+      {{/if}}
+    user_prompt: <task>{{event.value}}</task>
 ```
 
 ## Getting Started
@@ -136,18 +140,19 @@ agent_config:
 
 ### Required Fields
 
-- `name`: Human-readable agent name
-- `version`: Semantic version number
-- `description`: Brief description of agent purpose
-- `agent.type`: Agent category/type
-- `capabilities`: List of agent capabilities
-- `personality`: Personality traits and communication style
+- `templates`: List of template files to include (typically `repomix-output.xml`)
+- `agents`: Array of agent configurations
+- `agents[].id`: Unique identifier for the agent
+- `agents[].title`: Human-readable agent name
+- `agents[].description`: Brief description of agent purpose and capabilities
+- `agents[].system_prompt`: Comprehensive prompt defining agent behavior and capabilities
+- `agents[].user_prompt`: Template for user input processing
 
 ### Optional Fields
 
-- `preferences`: Technology and tool preferences
-- `workflow`: Workflow-specific settings
-- `integrations`: External tool integrations
+- Schema validation: `yaml-language-server` directive for IDE support
+- Custom rules: Conditional logic in system prompts using Handlebars
+- Additional templates: Custom template files beyond the standard ones
 
 ## Contributing
 

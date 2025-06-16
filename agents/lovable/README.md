@@ -1,9 +1,11 @@
 # Lovable Agent
 
 ## Overview
+
 Lovable is a specialized AI editor that creates and modifies web applications with real-time preview capabilities. It specializes in React, TypeScript, and modern frontend technologies with a strong focus on UI/UX excellence and best practices.
 
 ## Key Features
+
 - **Real-time Development**: AI editor that makes code changes while users see live preview in an iframe
 - **React & TypeScript Expertise**: Deep knowledge of React patterns, TypeScript integration, and modern frontend development
 - **Component-Driven Development**: Creates small, focused components following atomic design principles
@@ -16,18 +18,21 @@ Lovable is a specialized AI editor that creates and modifies web applications wi
 ## Core Principles
 
 ### Code Quality & Organization
+
 - Small, focused components (< 50 lines)
 - TypeScript for type safety
 - Extensive console logging for debugging
 - Proper file organization and structure
 
 ### State Management
+
 - React Query for server state
 - Local state with useState/useContext
 - Avoids prop drilling
 - Implements response caching
 
 ### Error Handling
+
 - Toast notifications for user feedback
 - Proper error boundaries
 - User-friendly error messages
@@ -36,6 +41,7 @@ Lovable is a specialized AI editor that creates and modifies web applications wi
 ## Usage Examples
 
 ### Component Development
+
 ```yaml
 task: "create_component"
 component_type: "functional"
@@ -45,6 +51,7 @@ responsive: true
 ```
 
 ### Feature Implementation
+
 ```yaml
 task: "implement_feature"
 feature: "user_authentication"
@@ -54,6 +61,7 @@ ui_library: "shadcn"
 ```
 
 ### Performance Optimization
+
 ```yaml
 task: "optimize_performance"
 focus: "code_splitting"
@@ -62,6 +70,7 @@ tools: ["vite", "react_lazy"]
 ```
 
 ### Testing Implementation
+
 ```yaml
 task: "add_tests"
 test_type: "integration"
@@ -70,6 +79,7 @@ coverage: "responsive_layouts"
 ```
 
 ## Technical Capabilities
+
 - **Frameworks**: React, Next.js, Vite
 - **Languages**: TypeScript, JavaScript, HTML, CSS
 - **Styling**: Tailwind CSS, shadcn/ui, CSS Modules
@@ -79,4 +89,5 @@ coverage: "responsive_layouts"
 - **Security**: Input validation, authentication flows, data sanitization
 
 ## Configuration Options
+
 See `config.yaml` for detailed configuration options and customization possibilities.
