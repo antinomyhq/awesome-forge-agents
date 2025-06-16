@@ -1,18 +1,22 @@
-# 🤖 ForgeCode.dev Agent Personas
+# ForgeCode.dev Agent Personas
 
 <div align="center">
-  <img src="./assets/images/logo-light.svg" alt="ForgeCode.dev Logo" width="200" height="auto">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/images/logo-light.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/images/logo-dark.svg">
+    <img alt="ForgeCode.dev Logo" src="./assets/images/logo-light.svg" width="200" height="auto">
+  </picture>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![YAML](https://img.shields.io/badge/Config-YAML-blue.svg)](https://yaml.org/)
   [![ForgeCode](https://img.shields.io/badge/Platform-ForgeCode.dev-purple.svg)](https://forgecode.dev)
 </div>
 
-## 📋 Overview
+## Overview
 
 This repository contains the agent persona configurations for the **ForgeCode.dev** project. Each agent is defined using YAML configuration files that specify their capabilities, personality traits, technical preferences, and workflow settings.
 
-## 🏗️ Repository Structure
+## Repository Structure
 
 ```
 agent-configs/
@@ -28,31 +32,29 @@ agent-configs/
     └── README.md            # Agent documentation
 ```
 
-## 🤖 Available Agents
+## Available Agents
 
-### 💖 Lovable - Frontend Development Specialist
-<img src="./assets/images/logo-small-light.png" alt="Lovable Agent" width="32" height="32" align="left">
+### Lovable - Frontend Development Specialist
 
 **Specialization**: React & Modern Frontend Technologies  
 **Personality**: Friendly and encouraging  
 **Focus**: UI/UX, Performance, Modern tooling
 
-[📖 Learn more about Lovable →](./lovable/README.md)
+[Learn more about Lovable →](./lovable/README.md)
 
 ---
 
-### 🧙‍♂️ Sage - Backend Architecture Expert
-<img src="./assets/images/logo-small-dark.png" alt="Sage Agent" width="32" height="32" align="left">
+### Sage - Backend Architecture Expert
 
 **Specialization**: System Architecture & Backend Development  
 **Personality**: Thoughtful and analytical  
 **Focus**: Scalability, Security, Performance
 
-[📖 Learn more about Sage →](./sage/README.md)
+[Learn more about Sage →](./sage/README.md)
 
 ---
 
-## 🛠️ Configuration Schema
+## Configuration Schema
 
 Each agent configuration follows a standardized YAML schema:
 
@@ -84,7 +86,7 @@ integrations:
   # Integration configurations
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Adding a New Agent
 
@@ -121,7 +123,7 @@ agent_config:
     styling: "tailwind"
 ```
 
-## 📊 Agent Comparison
+## Agent Comparison
 
 | Feature | Lovable | Sage |
 |---------|---------|------|
@@ -131,7 +133,7 @@ agent_config:
 | **Main Technologies** | React, TypeScript, Tailwind | Python, Go, PostgreSQL |
 | **Problem Solving** | Iterative & Collaborative | Systematic & Thorough |
 
-## 🔧 Configuration Guidelines
+## Configuration Guidelines
 
 ### Best Practices
 
@@ -155,7 +157,7 @@ agent_config:
 - `workflow`: Workflow-specific settings
 - `integrations`: External tool integrations
 
-## 🤝 Contributing
+## Contributing
 
 ### Adding New Agents
 
@@ -173,11 +175,11 @@ agent_config:
 4. Test the configuration
 5. Submit a pull request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Related Projects
+## Related Projects
 
 - [ForgeCode.dev Platform](https://forgecode.dev) - Main platform
 - [ForgeCode.dev Documentation](https://docs.forgecode.dev) - Platform documentation
@@ -186,7 +188,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <img src="./assets/images/favicon-light.svg" alt="ForgeCode.dev" width="24" height="24">
-  
-  **Built with ❤️ for the ForgeCode.dev ecosystem**
+  <strong>Built for the ForgeCode.dev ecosystem</strong>
 </div>
